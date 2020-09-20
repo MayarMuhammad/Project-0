@@ -1,0 +1,129 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#Navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px;
+      grid-template-columns: 1fr 50px;
+  -ms-grid-rows: 30px;
+      grid-template-rows: 30px;
+      grid-template-areas: ". HomeSearch";
+  margin: 15px 40px 0 10px;
+}
+
+#HomeSearch {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: HomeSearch;
+}
+
+.Home {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  padding: 4px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.Home:hover {
+  text-decoration: underline;
+}
+
+#ImagePage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 200px 70px 70px 200px;
+      grid-template-rows: 200px 70px 70px 200px;
+      grid-template-areas: ". GoogleImagePhoto ." ". SearchTextField ." ". Buttons ." ". . .";
+}
+
+#GoogleImagePhoto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: GoogleImagePhoto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#SearchTextField {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: SearchTextField;
+}
+
+#SearchTextField {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: SearchTextField;
+  width: 487px;
+  height: 40px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  border: 1px solid rgba(206, 199, 199, 0.87);
+  border-radius: 30px;
+  outline: none;
+  background-image: url("searchIcon.png");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#SearchTextField:hover {
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
+}
+
+#SearchTextField:focus {
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
+}
+
+#SearchButton {
+  grid-area: SearchButton;
+}
+
+#Buttons {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: Buttons;
+  display: flexbox;
+  justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.Button {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+}
+
+.Button:hover {
+  border: 1px solid #9c9a9a;
+  color: black;
+}
+/*# sourceMappingURL=Images.css.map */

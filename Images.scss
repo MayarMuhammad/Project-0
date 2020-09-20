@@ -1,0 +1,107 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#Navigation {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 30px;
+  grid-template-areas: ". HomeSearch";
+  margin: 15px 40px 0 10px;
+}
+
+#HomeSearch {
+  grid-area: HomeSearch;
+}
+
+.Home {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  padding: 4px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.Home:hover {
+  text-decoration: underline;
+}
+
+#ImagePage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 70px 70px 200px;
+  grid-template-areas:
+    ". GoogleImagePhoto ."
+    ". SearchTextField ."
+    ". Buttons ."
+    ". . .";
+}
+
+#GoogleImagePhoto {
+  grid-area: GoogleImagePhoto;
+  justify-self: center;
+  align-self: end;
+}
+
+#SearchTextField {
+  grid-area: SearchTextField;
+}
+
+#SearchTextField {
+  grid-area: SearchTextField;
+  width: 487px;
+  height: 40px;
+  justify-self: center;
+  align-self: end;
+  border: 1px solid rgba(206, 199, 199, 0.87);
+  border-radius: 30px;
+  outline: none;
+  background-image: url('searchIcon.png');
+  background-repeat: no-repeat;
+  background-position: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#SearchTextField:hover{
+    box-shadow: 1px 1px 5px gray;
+}
+
+#SearchTextField:focus{
+    box-shadow: 1px 1px 5px gray;
+}
+
+#SearchButton {
+  grid-area: SearchButton;
+}
+
+#Buttons {
+  grid-area: Buttons;
+  display: flexbox;
+  justify-self: center;
+  align-self: end;
+}
+
+.Button {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+}
+
+.Button:hover {
+  border: 1px solid #9c9a9a;
+  color: black;
+}
