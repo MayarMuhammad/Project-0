@@ -1,21 +1,28 @@
+body,
 html {
   width: 100%;
   height: 100%;
+  margin: 0%;
 }
 
 #Main {
   display: grid;
-  grid-template-rows: 50px 70px 1px 1fr;
-  grid-template-columns: 270px 1fr 1fr;
+  grid-template-rows: 60px 70px 280px 40px;
+  grid-template-columns: 240px 300px 1fr;
   grid-template-areas:
     "First First First"
-    "Second . ."
-    "Third Fourth .";
+    "Second Second Second"
+    "Third Fourth ."
+    ". Fifth .";
 }
 
 #First {
   grid-area: First;
   background-color: rgb(241, 241, 241);
+}
+
+#First > a > img {
+  margin: 9px;
 }
 
 #Second {
@@ -30,25 +37,88 @@ html {
   font-weight: inherit;
 }
 
+hr {
+  height: 1px;
+  background-color: rgb(194, 193, 193);
+  border: none;
+}
+
 #Third {
   grid-area: Third;
+  margin-left: 15px;
 }
 
 .Headers {
   color: #333;
   font-family: arial, sans-serif;
   font-weight: inherit;
-   margin: 25px 35px;
+  margin: 28px 35px;
 }
 
 #Header3 {
   font-size: 16px;
 }
 
-#Header4 ,#Header5,#Header6 ,#Header7{
+#Header4,
+#Header5,
+#Header6,
+#Header7 {
   font-size: 13px;
 }
 
-#Fourth{
+#Fourth {
   grid-area: Fourth;
+  margin-top: 90px;
+}
+
+.TextFields {
+  display: block;
+  position: relative;
+  margin: 14px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 1px 8px;
+  height: 25px;
+  width: 478px;
+  font-size: 13px;
+}
+
+.TextFields:focus {
+  outline: none !important;
+  border: 1px solid rgba(68, 68, 245, 0.637);
+  box-shadow: inset 0px 4px 4px -5px rgb(66, 67, 173);
+}
+
+#Buttons {
+  display: flexbox;
+  justify-self: center;
+  align-self: end;
+}
+
+.Button {
+  border: 1px solid #3079ed;
+  color: #fff;
+  box-shadow: none;
+  background-color: #4d90fe;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+  min-width: 120px;
+}
+
+#AdvancedSearch {
+  margin-left: 389px;
+}
+
+#GoogleSearch {
+  margin-left: 389px;
+  margin-top: 30px;
+}
+
+#AdvancedSearch:focus,
+#AdvancedSearch:active {
+  border: 1px solid whitesmoke;
 }

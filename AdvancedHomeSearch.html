@@ -13,8 +13,11 @@
       </div>
       <div id="Second">
         <h2 id="Header2">Advanced Search</h2>
+        <hr />
       </div>
       <div id="Third">
+        <br />
+        <br />
         <h3 class="Headers" id="Header3">Find pages with...</h3>
         <h4 class="Headers" id="Header4">all these words:</h4>
         <h4 class="Headers" id="Header5">this exact word or phrase:</h4>
@@ -22,7 +25,18 @@
         <h4 class="Headers" id="Header7">none of these words:</h4>
       </div>
       <div id="Fourth">
-        <input type="text" id="AllTheseWords">
+        <form action="https://google.com/search">
+          <input type="text" class="TextFields" name="as_q" />
+          <input type="text" class="TextFields" name="as_epq" />
+          <input type="text" class="TextFields" name="as_oq" />
+          <input type="text" class="TextFields" name="as_eq" />
+          <button type="submit" id="AdvancedSearch" class="Button">
+            Advanced Search
+          </button>
+          <button onclick="location.href='Home.html'" type="button" id="GoogleSearch" class="Button">
+            Google Search
+          </button>
+        </form>
       </div>
     </div>
   </body>
